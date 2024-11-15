@@ -1,0 +1,22 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+}
+
+:root {
+    --black-color: #000;
+    --light-gray-color: #eee;
+    --white-color:#fff;
+    --vivid-red-color: #E31837;
+    --main-color: #006a31;
+    --font-text-12: 12px;
+    --font-text-14: 14px;
+}

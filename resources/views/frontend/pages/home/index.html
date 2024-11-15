@@ -1,0 +1,43 @@
+@extends('frontend.layouts.master')
+
+@section('title')
+Trang chủ
+@endsection
+
+@section('styles')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="{{ asset('resources/libraries/owlcarousel/assets/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/libraries/owlcarousel/assets/owl.theme.default.min.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/home/index.css') }}">
+@endsection
+
+@section('content')
+<div id="menu-container">
+    <div class="box">
+        <div class="box-left">
+            <div class="header-box">
+                <div class="title-menu">
+                    <span>Danh mục sản phẩm</span>
+                </div>
+            </div>
+            <hr>
+            @include('frontend.pages.home.partials.menu-box')
+        </div>
+        <div class="box-right">
+            @include('frontend.pages.home.partials.header-box')
+            @include('frontend.pages.home.partials.swiper-container')
+        </div>
+    </div>
+    <div id="container">
+        @include('frontend.pages.home.partials.home-catalog')
+    </div>
+</div>
+@endsection
+
+@section('js')
+<script src="{{ asset('resources/libraries/jquery/jquery-3.7.1.js') }}"></script>
+<script src="{{ asset('resources/libraries/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/pages/home/banner.js') }}?v={{ time() }}"></script>
+<script src="{{ asset('resources/js/frontend/common/app.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/common/owl5.js') }}"></script>
+@endsection

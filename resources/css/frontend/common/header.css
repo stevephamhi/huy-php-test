@@ -1,0 +1,333 @@
+/* I. Header */
+.top_header{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    background-color: var(--main-color);
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.top_header p{
+    font-weight: 450;
+}
+
+.bottom_header{
+    margin: 10px 0px;
+    min-height: 75px;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+}
+
+.container_content{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.container_content .logo img{
+    object-fit: cover;
+    width: 250px;
+    height: 80px;
+}
+
+.search_container {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+    width: 410px;
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+.search_container input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 13px;
+    color: #333;
+    margin: 15px;
+  }
+
+.search_container button {
+    background-color: var(--vivid-red-color);
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    width: 60px;
+    height: 100%;
+}
+
+.search_container button{
+    font-size: large;
+    color: var(--white-color);
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 70px;
+}
+
+.contact img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.contact_content {
+    display: block; 
+}
+
+.contact_content .title {
+    font-weight: 550;
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.contact_content .phone {
+    color: var(--vivid-red-color);
+    font-weight: 550;
+    display: block; 
+}
+
+.user{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 54px;
+    background-color: var(--light-gray-color);
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+}
+
+.user i{
+    font-size: 25px;
+    color:var(--main-color);
+}
+
+.subnav_user{
+    width: 200px;
+    position: absolute; 
+    top: 113%;
+    left: 50%; 
+    transform: translateX(-93%); 
+    margin-top: 5px;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 999; 
+    opacity: 0;
+    visibility: hidden;
+}
+
+.subnav_user .icon_up{
+    /* display: block; */
+    position: absolute;
+    top: -30px; /* Đặt mũi tên vào bên trong và dính sát subnav */
+    left: 175px; /* Điều chỉnh để mũi tên nằm gần bên trái */
+    font-size: 15px;
+    color: var(--white-color); 
+}
+
+.user:hover .subnav_user{
+    opacity: 1;
+    visibility: visible;        
+}
+
+
+.list_user a:hover{
+    color: var(--vivid-red-color);
+}
+
+.list_user{
+    width: 100%;
+    text-align: left;
+    background-color: var(--white-color);
+    padding-top: 10px; 
+}
+
+.list_user li {
+    display: flex;
+    align-items: center; 
+    padding: 0px 10px;
+}
+
+.list_user a {
+    display: flex;
+    align-items: center;
+    color: var(--black-color);
+    text-decoration: none;
+    width: 100%;
+}
+
+.list_user i {
+    font-size: 20px; 
+    margin-right: 10px; 
+    color: var(--black-color);
+}
+
+.list_user span {
+    font-size: var(--font-text-14); 
+}
+
+
+.list_user a:hover{
+    color: var(--vivid-red-color);
+}
+
+.cart i{
+    font-size: 25px;
+    color:var(--main-color);
+}
+
+.cart{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 54px;
+    background-color: var(--light-gray-color);
+    border-radius: 50%;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.cart .quantity{
+    position: absolute;
+    top: -5px; 
+    right: 0px;
+    width: 20px; 
+    height: 20px;
+    background-color: var(--vivid-red-color);
+    color: var(--white-color);
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+
+}
+
+.btn_1{
+    background-color: var(--vivid-red-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    color: var(--white-color);
+    margin-right: 10px;
+}
+
+.btn_2{
+    background-color: var(--vivid-red-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    color: var(--white-color);
+    margin-right: 10px;
+}
+
+.btn_1:hover,.btn_2:hover{
+    background-color: var(--main-color);
+}
+
+
+/* II. Navigation */
+.container_nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+}
+
+.menu_nav {
+    width: 1300px;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.list_nav {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+    height: 100%;
+}
+
+.nav_item{
+    height: 90%;
+    line-height: 35px;
+    padding: 5px;
+    position: relative;
+}
+
+.nav_item a{
+    font-size: 16px;
+    height: 100%;
+    padding: 5px;
+    color: var(--white-color);
+}
+
+.nav_item:hover{
+    background-color: var(--vivid-red-color);
+    border-radius: 5px;
+}
+
+.nav_item i {
+    transition: transform 0.3s ease; 
+}
+
+.nav_item:hover i{
+    transform: rotate(180deg);
+}
+
+.list_subnav{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    width: 120px;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    border-radius: 5px; 
+    visibility: hidden; 
+    transform: translateY(-10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.list_subnav li{
+    width: 100%;
+}
+
+.list_subnav li a{
+    color: var(--black-color);
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.nav_item:hover .list_subnav{
+    opacity: 1; 
+    visibility: visible; 
+    transform: translateY(0); 
+}
+
+.list_subnav li a:hover{
+    color: var(--vivid-red-color);
+}

@@ -1,0 +1,510 @@
+@extends('frontend.layouts.master')
+
+@section('title')
+Chi tiết sản phẩm 
+@endsection
+
+@section('styles')
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/products/detail.css') }}">
+@endsection
+
+@section('content')
+<div class="product-detail-root">
+    <section class="bread_crumb">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="home">
+                    <a href="#">
+                        <span>Trang chủ</span>
+                    </a>
+                    <span class="mr_lr">
+                        <i class="bi bi-chevron-right"></i>
+                    </span>
+                </li>
+                <li>
+                    <a class="changeurl" href="#">
+                        <span>Khai vị</span>
+                    </a>
+                    <span class="mr_lr">
+                        <i class="bi bi-chevron-right"></i>
+                    </span>
+                </li>
+                <li>
+                    <span class="name_prd">Gà Giòn Xốt Tương Tỏi Hàn Quốc</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="product playout_product">
+        <div class="container">
+            <div class="details_product">
+                <div class="row prd">
+                    <!-- left -->
+                    <div class="product_detailas_left">
+                        <div class="product_img_block">
+                            <div class="gallery_top">
+                                <img src="https://bizweb.dktcdn.net/100/510/571/products/0003952-crispy-chicken-with-sg-s.png?v=1708679420060"
+                                    alt="">
+                            </div>
+                            <div class="gallery_bottom">
+                                <ul class="list_gallery_bottom dis_flex">
+                                    <!-- Khi có border -->
+                                    <li class="item_gallery_border">
+                                        <img src="https://bizweb.dktcdn.net/thumb/medium/100/510/571/products/0003952-crispy-chicken-with-sg-s.png?v=1708679420060"
+                                            alt="">
+                                    </li>
+                                    <!-- Khi chưa có border -->
+                                    <li class="item_gallery">
+                                        <img src="https://placehold.co/135x100?text=MegaFood" alt="">
+                                    </li>
+
+                                    <li class="item_gallery">
+                                        <img src="https://placehold.co/135x100?text=MegaFood" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="product-tab">
+                            <div class="title_description_prd">
+                                <h3 class="title_dct">
+                                    Mô tả món ăn
+                                </h3>
+                            </div>
+                            <hr>
+
+                            <div class="description_product">
+                                <div class="row_contnet">
+                                    <span>Gà Giòn Xốt Tương Tỏi Hàn Quốc là món gà chiên giòn rụm, với lớp da vàng
+                                        ươm, giòn tan. Gà được phủ đều một lớp xốt tương tỏi đậm đà, kết hợp giữa vị
+                                        cay nhẹ, mặn ngọt hài hòa đặc trưng của ẩm thực Hàn Quốc. Hương thơm nồng
+                                        của tỏi hòa quyện cùng vị tương đậm, tạo nên sự hấp dẫn khó cưỡng, làm bùng
+                                        nổ vị giác ngay từ miếng đầu tiên.</span>
+                                </div>
+
+                                <div class="row_img_prd">
+                                    <ul class="list_img_prd">
+                                        <li class="item_img_prd">
+                                            <img src="	https://placehold.co/150x100?text=MegaFood" alt="">
+                                        </li>
+
+                                        <li class="item_img_prd">
+                                            <img src="	https://placehold.co/150x100?text=MegaFood" alt="">
+                                        </li>
+
+                                        <li class="item_img_prd">
+                                            <img src="	https://placehold.co/150x100?text=MegaFood" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="view_all_dct">
+                                    <span>Xem thêm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Right -->
+                    <div class="product_detailas_right">
+                        <div class="full_width">
+                            <div class="deails_pro">
+                                <h1 class="title_product">
+                                    Gà Giòn Xốt Tương Tỏi Hàn Quốc
+                                </h1>
+                                <form action="" method="post">
+                                    <div class="price_box">
+                                        <span class="special_price">
+                                            <span class="product_price">
+                                                99.000₫
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="form-product">
+                                        <div class="select_swatch">
+                                            <div class="seclect_prd">
+                                                Loại: <span class="value_roperties">3 miếng</span>
+                                            </div>
+                                        </div>
+                                        <div class="thump_swatch">
+                                            <div class="swatch_element">
+                                                <input id="swatch-0-3-mieng" type="radio" name="option-0"
+                                                    value="3 miếng" checked>
+                                                <label for="swatch-0-3-mieng">3 miếng</label> </label>
+                                            </div>
+
+                                            <div class="swatch_element">
+                                                <input id="swatch-0-5-mieng" type="radio" name="option-0"
+                                                    value="5 miếng">
+                                                <label for="swatch-0-5-mieng">5 miếng</label> </label>
+                                            </div>
+
+                                            <div class="swatch_element">
+                                                <input id="swatch-0-9-mieng" type="radio" name="option-0"
+                                                    value="9 miếng">
+                                                <label for="swatch-0-9-mieng">9 miếng</label> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ghi chú -->
+                                    <div class="note">
+                                        <label>Ghi chú</label>
+                                        <textarea class="note_content"
+                                            placeholder="Nhập ghi chú của bạn tại đây..."></textarea>
+
+                                    </div>
+
+                                    <!-- Số lượng -->
+                                    <div class="quantity_prd">
+                                        <div class="custom_btn_number">
+                                            <label class="sl">Số lượng:</label>
+                                            <div class="input_number_product">
+                                                <button class="btn_num">
+                                                    <i class="bi bi-dash-lg"></i>
+                                                </button>
+                                                <span class="show_num">1</span>
+                                                <button class="btn_num">
+                                                    <i class="bi bi-plus-lg"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mua -->
+                                    <div class="button_actions">
+                                        <button type="submit" title="Mua ngay" class="btn_by_now">
+                                            <a href="#"> MUA NGAY </a>
+                                        </button>
+                                        <button title="Thêm vào yêu thích" class="btn_wishlist">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="group-button">
+                                        <button title="Thêm vào giỏ hàng" class="btn_add_to_cart">
+                                            <a href="#">THÊM VÀO GIỎ</a>
+                                        </button>
+                                        <button title="Đặt bàn ngay" class="btn_phone">
+                                            <a href="#">ĐẶT BÀN NGAY</a>
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="voucher_product">
+                                <div class="title_voucher">
+                                    <img src="https://bizweb.dktcdn.net/100/510/571/themes/941527/assets/code_dis.gif?1727255430829"
+                                        alt="">
+                                    <span>Nhận voucher ngay !!!</span>
+                                </div>
+
+                                <div class="row_voucher">
+                                    <div class="content_voucher">
+                                        <span>
+                                            Nhập mã <b>DOLA20</b> để giảm ngay 20.000đ.
+                                            Áp dụng cho đơn hàng từ 200k trở lên.
+                                            Không đi kèm với chương trình khác
+                                        </span>
+                                        <div class="coupon-code" title="Sao chép">Sao chép</div>
+                                    </div>
+
+                                    <div class="content_voucher">
+                                        <span>
+                                            Nhập mã <b>DOLA50</b> để giảm ngay 50.000đ.
+                                            Áp dụng cho đơn hàng từ 500k trở lên.
+                                            Không đi kèm với chương trình khác
+                                        </span>
+                                        <div class="coupon-code" title="Sao chép">Sao chép</div>
+                                    </div>
+
+                                    <div class="content_voucher">
+                                        <span>
+                                            Nhập mã <b>FREESHIP</b> để giảm ngay miễn phí giao hàng.
+                                            Áp dụng cho đơn hàng từ 300k trở lên
+                                        </span>
+                                        <div class="coupon-code" title="Sao chép">Sao chép</div>
+                                    </div>
+
+                                </div>
+                                <div class="note_voucher">
+                                    <span>Lưu mã và nhập ở trang <b>THANH TOÁN</b> bạn nhé!!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Món ăn liên quan -->
+                    <div class="product_relate">
+                        <h3 class="title">
+                            <a class="title-name" href="#" title="Món ăn liên quan">Món ăn liên quan
+                            </a>
+                        </h3>
+                        <!-- product -->
+                        <div class="product_relate_swiper">
+                            <ul class="list_prd_relate">
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="product_thumb">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003951-crispy-chicken-with-k-sa.png?v=1708679419150"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product_info">
+                                        <span class="product_name">
+                                            <a href="#">Gà Giòn Xốt Hàn - Truyền Thống</a>
+                                        </span>
+                                        <div class="product_content">
+                                            <span>
+                                                Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
+                                                trưng theo kiểu truyền...
+                                            </span>
+                                            <a href="#">Xem thêm</a>
+                                        </div>
+                                        <div class="group_form">
+                                            <div class="price-box">
+                                                <span>Giá chỉ từ</span>429.000₫
+                                            </div>
+                                            <a title="Thêm" href="#">
+                                                Thêm
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="product_thumb">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003950-crispy-chicken-with-k-sa.png?v=1708679418013"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product_info">
+                                        <span class="product_name">
+                                            <a href="#">Gà Giòn Xốt Hàn - Truyền Thống</a>
+                                        </span>
+                                        <div class="product_content">
+                                            <span>
+                                                Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
+                                                trưng theo kiểu truyền...
+                                            </span>
+                                            <a href="#">Xem thêm</a>
+                                        </div>
+                                        <div class="group_form">
+                                            <div class="price-box">
+                                                <span>Giá chỉ từ</span>429.000₫
+                                            </div>
+                                            <a title="Thêm" href="#">
+                                                Thêm
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="product_thumb">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003870-bbq-chicken-platter-2pcs.png?v=1708679416963"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product_info">
+                                        <span class="product_name">
+                                            <a href="#">Gà Giòn Xốt Hàn - Truyền Thống</a>
+                                        </span>
+                                        <div class="product_content">
+                                            <span>
+                                                Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
+                                                trưng theo kiểu truyền...
+                                            </span>
+                                            <a href="#">Xem thêm</a>
+                                        </div>
+                                        <div class="group_form">
+                                            <div class="price-box">
+                                                <span>Giá chỉ từ</span>429.000₫
+                                            </div>
+                                            <a title="Thêm" href="#">
+                                                Thêm
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="product_thumb">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003667-ham-mushroom-w-cream-tru.png?v=1708679382267"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product_info">
+                                        <span class="product_name">
+                                            <a href="#">Gà Giòn Xốt Hàn - Truyền Thống</a>
+                                        </span>
+                                        <div class="product_content">
+                                            <span>
+                                                Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
+                                                trưng theo kiểu truyền...
+                                            </span>
+                                            <a href="#">Xem thêm</a>
+                                        </div>
+                                        <div class="group_form">
+                                            <div class="price-box">
+                                                <span>Giá chỉ từ</span>429.000₫
+                                            </div>
+                                            <a title="Thêm" href="#">
+                                                Thêm
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tin tức -->
+                    <div class="block-blog">
+                        <h3 class="title">
+                            <a href="#">Tin tức mới nhất</a>
+                        </h3>
+
+                        <ul class="list_blog_small">
+                            <li class="item_blog_small">
+                                <div class="blog_thumb">
+                                    <a href="#" class="thumb">
+                                        <img src="	https://bizweb.dktcdn.net/100/510/571/articles/de-banh-pizza-mua-o-dau-0.jpg?v=1709024507643"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="block_content">
+                                    <span>
+                                        <a class="line-clamp" href="#"
+                                            title="Đế bánh pizza mua ở đâu đảm bảo chất lượng?">Đế bánh pizza mua ở
+                                            đâu đảm bảo chất lượng?</a>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="item_blog_small">
+                                <div class="blog_thumb">
+                                    <a href="#" class="thumb">
+                                        <img src="https://bizweb.dktcdn.net/100/510/571/articles/cach-lam-pizza-xot-mayonnaise-4.jpg?v=1709024419360"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="block_content">
+                                    <span>
+                                        <a class="line-clamp" href="#"
+                                            title="Cách làm pizza xốt Mayonnaise thơm béo ngon ngất ngây">Cách làm
+                                            pizza xốt Mayonnaise thơm béo ngon ngất ngây</a>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="item_blog_small">
+                                <div class="blog_thumb">
+                                    <a href="#" class="thumb">
+                                        <img src="https://bizweb.dktcdn.net/100/510/571/articles/tim-hieu-cac-loai-pasta-0.jpg?v=1709024193760"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="block_content">
+                                    <span>
+                                        <a class="line-clamp" href="#"
+                                            title="Pasta là món ăn của nước nào? Pasta và Spaghetti có gì khác nhau?">Pasta
+                                            là món ăn của nước nào? Pasta và Spaghetti có gì khác nhau?</a>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="item_blog_small">
+                                <div class="blog_thumb">
+                                    <a href="#" class="thumb">
+                                        <img src="https://bizweb.dktcdn.net/100/510/571/articles/tiet-lo-tinh-cach-qua-cach-an-pizza-0.jpg?v=1709024054670"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="block_content">
+                                    <span>
+                                        <a class="line-clamp" href="#"
+                                            title="Tiết lộ tính cách qua cách ăn pizza cực thú vị">Tiết lộ tính cách
+                                            qua cách ăn pizza cực thú vị</a>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="view_all">
+                            <a href="#">
+                                <span>Xem tất cả</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Món ăn đã xem -->
+                    <div class="product_relate">
+                        <h3 class="title">
+                            <a class="title-name" href="#" title="Món ăn liên quan">Món ăn đã xem
+                            </a>
+                        </h3>
+                        <!-- product -->
+                        <div class="product_relate_swiper">
+                            <ul class="list_prd_relate">
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="product_thumb">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003951-crispy-chicken-with-k-sa.png?v=1708679419150"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product_info">
+                                        <span class="product_name">
+                                            <a href="#">Gà Giòn Xốt Hàn - Truyền Thống</a>
+                                        </span>
+                                        <div class="product_content">
+                                            <span>
+                                                Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
+                                                trưng theo kiểu truyền...
+                                            </span>
+                                            <a href="#">Xem thêm</a>
+                                        </div>
+                                        <div class="group_form">
+                                            <div class="price-box">
+                                                <span>Giá chỉ từ</span>429.000₫
+                                            </div>
+                                            <a title="Thêm" href="#">
+                                                Thêm
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block-blog">
+                        <a href="#"><img
+                                src="https://bizweb.dktcdn.net/100/510/571/themes/941527/assets/banner-pro.jpg?1727255430829"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+@endsection

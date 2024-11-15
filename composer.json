@@ -1,0 +1,17 @@
+{
+    "name": "lenovo/mvc-project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "phamdinhhuy19092005",
+            "email": "b2bhuy@gmail.com"
+        }
+    ],
+    "require": {}
+}
