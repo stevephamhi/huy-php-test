@@ -1,3 +1,26 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+}
+
+:root {
+    --black-color: #000;
+    --light-gray-color: #eee;
+    --white-color:#fff;
+    --secondary-color: #00B2A9;
+    --main-color: #FF7D01;
+    --font-text-12: 12px;
+    --font-text-14: 14px;
+}
+
 /* I. Header */
 .top_header{
     width: 100%;
@@ -14,9 +37,12 @@
 }
 
 .bottom_header{
-    margin: 10px 0px;
-    min-height: 75px;
+    min-height: 100px;
     width: 100%;
+}
+
+.container_bt_header{
+    margin: 10px 0px;
 }
 
 .container{
@@ -27,14 +53,20 @@
     display: flex;
     align-items: center;
     width: 1300px;
-    height: 80px;
+    height: 100px;
     margin: 0 auto;
+}
+
+.container_content .logo{
+    overflow: hidden;
+    height: 100%;
 }
 
 .container_content .logo img{
     object-fit: cover;
+    overflow: hidden;
     width: 250px;
-    height: 80px;
+    height: 100%;
 }
 
 .search_container {
@@ -59,7 +91,7 @@
   }
 
 .search_container button {
-    background-color: var(--vivid-red-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 10%;
     cursor: pointer;
@@ -80,8 +112,8 @@
 }
 
 .contact img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin-right: 10px;
 }
 
@@ -96,7 +128,7 @@
 }
 
 .contact_content .phone {
-    color: var(--vivid-red-color);
+    color: var(--secondary-color);
     font-weight: 550;
     display: block; 
 }
@@ -104,8 +136,9 @@
 .user{
     width: 50px;
     height: 50px;
-    text-align: center;
-    line-height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--light-gray-color);
     border-radius: 50%;
     margin-left: 10px;
@@ -124,7 +157,6 @@
     left: 50%; 
     transform: translateX(-93%); 
     margin-top: 5px;
-    background-color: var(--white-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     z-index: 999; 
@@ -135,7 +167,7 @@
 .subnav_user .icon_up{
     /* display: block; */
     position: absolute;
-    top: -30px; /* Đặt mũi tên vào bên trong và dính sát subnav */
+    top: -20px; /* Đặt mũi tên vào bên trong và dính sát subnav */
     left: 175px; /* Điều chỉnh để mũi tên nằm gần bên trái */
     font-size: 15px;
     color: var(--white-color); 
@@ -148,7 +180,7 @@
 
 
 .list_user a:hover{
-    color: var(--vivid-red-color);
+    color: var(--secondary-color);
 }
 
 .list_user{
@@ -161,6 +193,8 @@
 .list_user li {
     display: flex;
     align-items: center; 
+    justify-content: center;
+    line-height: 50px;
     padding: 0px 10px;
 }
 
@@ -184,7 +218,7 @@
 
 
 .list_user a:hover{
-    color: var(--vivid-red-color);
+    color: var(--secondary-color);
 }
 
 .cart i{
@@ -195,8 +229,9 @@
 .cart{
     width: 50px;
     height: 50px;
-    text-align: center;
-    line-height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--light-gray-color);
     border-radius: 50%;
     margin: 0px 10px;
@@ -209,7 +244,7 @@
     right: 0px;
     width: 20px; 
     height: 20px;
-    background-color: var(--vivid-red-color);
+    background-color: var(--secondary-color);
     color: var(--white-color);
     font-size: 11px;
     font-weight: bold;
@@ -220,7 +255,7 @@
 }
 
 .btn_1{
-    background-color: var(--vivid-red-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -231,7 +266,7 @@
 }
 
 .btn_2{
-    background-color: var(--vivid-red-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -285,7 +320,7 @@
 }
 
 .nav_item:hover{
-    background-color: var(--vivid-red-color);
+    background-color: var(--secondary-color);
     border-radius: 5px;
 }
 
@@ -329,5 +364,5 @@
 }
 
 .list_subnav li a:hover{
-    color: var(--vivid-red-color);
+    color: var(--secondary-color);
 }

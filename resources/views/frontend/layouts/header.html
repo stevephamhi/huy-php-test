@@ -5,24 +5,26 @@
     <div class="bottom_header">
         <div class="container">
             <div class="container_content">
-
                 <div class="logo">
-                    <img src="img/logo.jpg" alt="">
+                    <img src="{{ asset('resources/images/frontend/common/home-logo.png') }}" alt="Home Logo">
                 </div>
+
                 <div class="search_container">
                     <input type="text" placeholder="Bạn muốn tìm kiếm gì?" name="" id="">
                     <button>
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
+
                 <div class="contact">
-                    <img src="img/ship.png" alt="">
+                    <img src="{{ asset('resources/images/frontend/common/shipping-logo.png') }}" alt="">
                     <div class="contact_content">
                         <span class="title">Giao hàng tận nơi</span>
                         <span class="phone">1900 6750</span>
                     </div>
                 </div>
-                <div class="user">  
+
+                <div class="user">
                     <a href="#"><i class="bi bi-person-circle"></i></a>
                     <div class="subnav_user">
                         <span class="icon_up"><i class="bi bi-caret-up-fill"></i></span>
@@ -33,12 +35,14 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="cart">
-                    <span class="quantity">
-                        0
-                    </span>
-                    <a href="#"><i class="bi bi-basket2"></i></a>
+                    <span class="quantity">0</span>
+                    <a href="#">
+                        <i class="bi bi-basket2"></i>
+                    </a>
                 </div>
+                
                 <button class="btn_1">Đặt món online</button>
                 <button class="btn_2">Đặt bàn</button>
             </div>
@@ -49,7 +53,7 @@
             <div class="menu_nav">
                 <ul class="list_nav">
                     <li class="nav_item"><a href="#">Trang chủ</a></li>
-                    <li class="nav_item"><a href="#">Giới thiệu</a></li>       
+                    <li class="nav_item"><a href="#">Giới thiệu</a></li>
                     <li class="nav_item"><a href="#">Sản phẩm <i class="bi bi-caret-down-fill"></i></a>
                         <ul class="list_subnav">
                             <li><a href="#">Pizza</a></li>
@@ -67,5 +71,5 @@
                 </ul>
             </div>
         </div>
-   </nav>
+    </nav>
 </header>

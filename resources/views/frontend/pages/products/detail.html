@@ -8,11 +8,14 @@ Chi tiết sản phẩm
 <link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/products/detail.css') }}">
 @endsection
 
+@section('scripts')
+@endsection
+
 @section('content')
-<div class="product-detail-root">
+<div class="bodywrap">
     <section class="bread_crumb">
-        <div class="container">
-            <ul class="breadcrumb">
+        <div class="container_bread_crumb">
+            <ul class="List_bread_crumb">
                 <li class="home">
                     <a href="#">
                         <span>Trang chủ</span>
@@ -21,8 +24,8 @@ Chi tiết sản phẩm
                         <i class="bi bi-chevron-right"></i>
                     </span>
                 </li>
-                <li>
-                    <a class="changeurl" href="#">
+                <li class="changeurl">
+                    <a href="#">
                         <span>Khai vị</span>
                     </a>
                     <span class="mr_lr">
@@ -32,14 +35,14 @@ Chi tiết sản phẩm
                 <li>
                     <span class="name_prd">Gà Giòn Xốt Tương Tỏi Hàn Quốc</span>
                 </li>
+
             </ul>
         </div>
     </section>
-
     <section class="product playout_product">
-        <div class="container">
+        <div class="container_details">
             <div class="details_product">
-                <div class="row prd">
+                <div class="row_prd">
                     <!-- left -->
                     <div class="product_detailas_left">
                         <div class="product_img_block">
@@ -109,7 +112,7 @@ Chi tiết sản phẩm
                     <!-- Right -->
                     <div class="product_detailas_right">
                         <div class="full_width">
-                            <div class="deails_pro">
+                            <div class="details">
                                 <h1 class="title_product">
                                     Gà Giòn Xốt Tương Tỏi Hàn Quốc
                                 </h1>
@@ -206,7 +209,7 @@ Chi tiết sản phẩm
                                             Áp dụng cho đơn hàng từ 200k trở lên.
                                             Không đi kèm với chương trình khác
                                         </span>
-                                        <div class="coupon-code" title="Sao chép">Sao chép</div>
+                                        <div class="coupon_code" title="Sao chép">Sao chép</div>
                                     </div>
 
                                     <div class="content_voucher">
@@ -215,7 +218,7 @@ Chi tiết sản phẩm
                                             Áp dụng cho đơn hàng từ 500k trở lên.
                                             Không đi kèm với chương trình khác
                                         </span>
-                                        <div class="coupon-code" title="Sao chép">Sao chép</div>
+                                        <div class="coupon_code" title="Sao chép">Sao chép</div>
                                     </div>
 
                                     <div class="content_voucher">
@@ -223,7 +226,7 @@ Chi tiết sản phẩm
                                             Nhập mã <b>FREESHIP</b> để giảm ngay miễn phí giao hàng.
                                             Áp dụng cho đơn hàng từ 300k trở lên
                                         </span>
-                                        <div class="coupon-code" title="Sao chép">Sao chép</div>
+                                        <div class="coupon_code" title="Sao chép">Sao chép</div>
                                     </div>
 
                                 </div>
@@ -243,14 +246,16 @@ Chi tiết sản phẩm
                         </h3>
                         <!-- product -->
                         <div class="product_relate_swiper">
-                            <ul class="list_prd_relate">
-                                <li>
+                            <ul class="owl-carousel owl-theme list_prd_relate">
+
+                                <!-- Product Item 1 -->
+                                <li class="item">
                                     <div class="product_item">
                                         <a href="#" class="product_thumb">
                                             <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003951-crispy-chicken-with-k-sa.png?v=1708679419150"
-                                                alt="">
+                                                alt="Product 1">
                                         </a>
-                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu thích">
                                             <i class="fa-regular fa-heart"></i>
                                         </a>
                                     </div>
@@ -261,28 +266,29 @@ Chi tiết sản phẩm
                                         <div class="product_content">
                                             <span>
                                                 Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
-                                                trưng theo kiểu truyền...
+                                                trưng theo kiểu truyền thống.
                                             </span>
                                             <a href="#">Xem thêm</a>
                                         </div>
                                         <div class="group_form">
                                             <div class="price-box">
-                                                <span>Giá chỉ từ</span>429.000₫
+                                                <span>Giá chỉ từ</span> 429.000₫
                                             </div>
-                                            <a title="Thêm" href="#">
-                                                Thêm
-                                            </a>
+                                            <a title="Thêm" href="#">Thêm</a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li>
+                                <!-- Repeat the above block for more items -->
+
+                                <!-- Product Item 2 -->
+                                <li class="item">
                                     <div class="product_item">
                                         <a href="#" class="product_thumb">
                                             <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003950-crispy-chicken-with-k-sa.png?v=1708679418013"
-                                                alt="">
+                                                alt="Product 2">
                                         </a>
-                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu thích">
                                             <i class="fa-regular fa-heart"></i>
                                         </a>
                                     </div>
@@ -293,84 +299,21 @@ Chi tiết sản phẩm
                                         <div class="product_content">
                                             <span>
                                                 Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
-                                                trưng theo kiểu truyền...
+                                                trưng theo kiểu truyền thống.
                                             </span>
                                             <a href="#">Xem thêm</a>
                                         </div>
                                         <div class="group_form">
                                             <div class="price-box">
-                                                <span>Giá chỉ từ</span>429.000₫
+                                                <span>Giá chỉ từ</span> 429.000₫
                                             </div>
-                                            <a title="Thêm" href="#">
-                                                Thêm
-                                            </a>
+                                            <a title="Thêm" href="#">Thêm</a>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li>
-                                    <div class="product_item">
-                                        <a href="#" class="product_thumb">
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003870-bbq-chicken-platter-2pcs.png?v=1708679416963"
-                                                alt="">
-                                        </a>
-                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </a>
-                                    </div>
-                                    <div class="product_info">
-                                        <span class="product_name">
-                                            <a href="#">Gà Giòn Xốt Hàn - Truyền Thống</a>
-                                        </span>
-                                        <div class="product_content">
-                                            <span>
-                                                Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
-                                                trưng theo kiểu truyền...
-                                            </span>
-                                            <a href="#">Xem thêm</a>
-                                        </div>
-                                        <div class="group_form">
-                                            <div class="price-box">
-                                                <span>Giá chỉ từ</span>429.000₫
-                                            </div>
-                                            <a title="Thêm" href="#">
-                                                Thêm
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
+                                <!-- Add more product items as needed -->
 
-                                <li>
-                                    <div class="product_item">
-                                        <a href="#" class="product_thumb">
-                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003667-ham-mushroom-w-cream-tru.png?v=1708679382267"
-                                                alt="">
-                                        </a>
-                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </a>
-                                    </div>
-                                    <div class="product_info">
-                                        <span class="product_name">
-                                            <a href="#">Gà Giòn Xốt Hàn - Truyền Thống</a>
-                                        </span>
-                                        <div class="product_content">
-                                            <span>
-                                                Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
-                                                trưng theo kiểu truyền...
-                                            </span>
-                                            <a href="#">Xem thêm</a>
-                                        </div>
-                                        <div class="group_form">
-                                            <div class="price-box">
-                                                <span>Giá chỉ từ</span>429.000₫
-                                            </div>
-                                            <a title="Thêm" href="#">
-                                                Thêm
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -462,14 +405,16 @@ Chi tiết sản phẩm
                         </h3>
                         <!-- product -->
                         <div class="product_relate_swiper">
-                            <ul class="list_prd_relate">
-                                <li>
+                            <ul class="owl-carousel owl-theme list_prd_relate">
+
+                                <!-- Product Item 1 -->
+                                <li class="item">
                                     <div class="product_item">
                                         <a href="#" class="product_thumb">
                                             <img src="https://bizweb.dktcdn.net/thumb/large/100/510/571/products/0003951-crispy-chicken-with-k-sa.png?v=1708679419150"
-                                                alt="">
+                                                alt="Product 1">
                                         </a>
-                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu tích">
+                                        <a href="#" class="setWishlist" title="Thêm vào danh sách yêu thích">
                                             <i class="fa-regular fa-heart"></i>
                                         </a>
                                     </div>
@@ -480,31 +425,31 @@ Chi tiết sản phẩm
                                         <div class="product_content">
                                             <span>
                                                 Gà tẩm bột chiên giòn rụm phủ lớp xốt (có chút vị cay rất nhẹ) đặc
-                                                trưng theo kiểu truyền...
+                                                trưng theo kiểu truyền thống.
                                             </span>
                                             <a href="#">Xem thêm</a>
                                         </div>
                                         <div class="group_form">
                                             <div class="price-box">
-                                                <span>Giá chỉ từ</span>429.000₫
+                                                <span>Giá chỉ từ</span> 429.000₫
                                             </div>
-                                            <a title="Thêm" href="#">
-                                                Thêm
-                                            </a>
+                                            <a title="Thêm" href="#">Thêm</a>
                                         </div>
                                     </div>
                                 </li>
+
+                                <!-- Repeat the above block for more items -->
+
                             </ul>
                         </div>
                     </div>
                     <div class="block-blog">
-                        <a href="#"><img
+                        <a class="baner_detail" href="#"><img
                                 src="https://bizweb.dktcdn.net/100/510/571/themes/941527/assets/banner-pro.jpg?1727255430829"
                                 alt=""></a>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 </div>
 @endsection
